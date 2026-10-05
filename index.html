@@ -1,519 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>About Me ✿</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khanza | About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <!-- Sparkles -->
+  <div class="sparkle" style="top:12%; left:8%; animation-delay:0s;"></div>
+  <div class="sparkle" style="top:22%; left:85%; animation-delay:0.8s;"></div>
+  <div class="sparkle" style="top:45%; left:15%; animation-delay:1.5s;"></div>
+  <div class="sparkle" style="top:65%; left:90%; animation-delay:0.4s;"></div>
+  <div class="sparkle" style="top:78%; left:25%; animation-delay:2.1s;"></div>
+  <div class="sparkle" style="top:35%; left:70%; animation-delay:1.2s;"></div>
+  <div class="sparkle" style="top:88%; left:60%; animation-delay:0.6s;"></div>
+  <div class="sparkle" style="top:18%; left:45%; animation-delay:1.8s;"></div>
 
-  <!-- Sparkle Cursor -->
-  <div class="custom-cursor">
-    <span class="cursor-sparkle">✦</span>
-    <span class="cursor-leaf">⌁</span>
-  </div>
-
-  <!-- Floating Leaves -->
-  <div class="floating-leaves">
-    <span>𖥧</span>
-    <span>❧</span>
-    <span>𖡼</span>
-    <span>⌁</span>
-  </div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <a href="#home" class="logo">About Me <span>✿</span></a>
-
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#university">University</a>
-      <a href="#cats">Cats</a>
-      <a href="#dreams">Dreams</a>
-    </div>
-
-    <button class="menu-btn">☰</button>
-  </nav>
-
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-
-    <div class="hero-content reveal">
-
-      <p class="small-title">welcome to my little world ✦</p>
-
-      <h1>
-        Growing,<br>
-        learning &<br>
-        <span>dreaming.</span>
-      </h1>
-
-      <p class="hero-description">
-        A little space about who I am, what I love,
-        what I dream about, and the journey I'm creating
-        for myself.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#about" class="btn primary">Get to know me ♡</a>
-        <a href="#dreams" class="btn secondary">My dreams →</a>
+  <header class="header">
+    <nav class="nav">
+      <a href="#home" class="logo">khanza<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav-about">About</a>
+        <a href="#characters" data-i18n="nav-looks">Looks</a>
+        <a href="#dreams" data-i18n="nav-dreams">Dreams</a>
+        <a href="#food" data-i18n="nav-fav">Favorites</a>
+        <a href="#gallery" data-i18n="nav-gallery">Gallery</a>
+        <a href="#why" data-i18n="nav-why">Why Uni</a>
+        <a href="#contact" data-i18n="nav-contact">Contact</a>
+        <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span id="langLabel">EN</span> / <span class="lang-other">ID</span>
+        </button>
       </div>
+    </nav>
+  </header>
 
-    </div>
-
-
-    <!-- HERO PHOTO -->
-    <div class="hero-photo reveal">
-
-      <div class="photo-frame">
-
-        <img
-          src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85"
-          alt="Flowers">
-
-        <div class="photo-note">
-          <span>little things</span>
-          <span>matter ✿</span>
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-wallpaper"></div>
+      <!-- Side decorations -->
+      <div class="hero-deco hero-deco-left">
+        <img src="deco-miffy.png" alt="" class="deco-img" />
+        <img src="deco-stars.png" alt="" class="deco-img deco-stars" />
+      </div>
+      <div class="hero-deco hero-deco-right">
+        <img src="deco-miffy-read.png" alt="" class="deco-img" />
+        <img src="deco-button.png" alt="" class="deco-img deco-btn" />
+      </div>
+      <div class="hero-content">
+        <div class="profile-wrapper">
+          <img src="profile.jpg" alt="Profile photo" class="profile-img" />
+          <div class="profile-ring"></div>
         </div>
-
+        <p class="eyebrow" data-i18n="eyebrow">Hello, I'm</p>
+        <h1 class="name">Khanza</h1>
+        <p class="name-tag">@eunseorin</p>
+        <p class="tagline" data-i18n="tagline">Aspiring student · Dreamer · Explorer</p>
+        <p class="intro" data-i18n="intro">
+          Building a future through curiosity, learning, and meaningful experiences.
+        </p>
+        <a href="#about" class="btn" data-i18n="btn-more">Discover more</a>
       </div>
+    </section>
 
-      <div class="tiny-flower">✿</div>
-      <div class="tiny-star">✦</div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ABOUT -->
-  <section class="section about" id="about">
-
-    <div class="section-heading reveal">
-      <p class="eyebrow">01 · ABOUT ME</p>
-      <h2>A little bit<br><span>about me.</span></h2>
-    </div>
-
-
-    <div class="about-grid">
-
-      <div class="about-photo reveal">
-
-        <img
-          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85"
-          alt="Creative lifestyle">
-
-        <div class="photo-label">
-          <span>currently</span>
-          <strong>figuring things out ✦</strong>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-i18n="about-p1">
+              I'm someone who loves learning new things and exploring different paths.
+              Right now, I'm focused on preparing myself for university — a place where
+              I can grow, challenge myself, and discover what I'm truly capable of.
+            </p>
+            <p data-i18n="about-p2">
+              Whether through language, literature, technology, or simply meeting new people,
+              I want every experience to shape me into a more independent and creative person.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-item">
+              <span class="label" data-i18n="label-now">Currently</span>
+              <span class="value" data-i18n="val-now">Preparing for university</span>
+            </div>
+            <div class="card-item">
+              <span class="label" data-i18n="label-interest">Interests</span>
+              <span class="value" data-i18n="val-interest">Language · Literature · Tech · Exploration</span>
+            </div>
+            <div class="card-item">
+              <span class="label" data-i18n="label-goal">Goal</span>
+              <span class="value" data-i18n="val-goal">Keep learning & create something meaningful</span>
+            </div>
+          </div>
         </div>
-
       </div>
+    </section>
 
 
-      <div class="about-text reveal">
 
-        <p>
-          I'm someone who loves learning and discovering new things.
-          I enjoy trying my best, taking on new challenges, and growing
-          through every experience.
+    <!-- Character Slider -->
+    <section id="characters" class="section characters">
+      <div class="container">
+        <h2 class="section-title" data-i18n="looks-title">Campus Looks</h2>
+        <p class="section-desc" data-i18n="looks-desc">Swipe to see the character in each university jacket</p>
+
+        <div class="looks-deco-wrap">
+          <div class="looks-deco looks-deco-left">
+            <img src="deco-gapernah.png" alt="" class="deco-gapernah" />
+            <img src="deco-utbk.jpg" alt="" class="deco-utbk" />
+          </div>
+
+          <div class="char-slider">
+            <button class="char-nav prev" type="button" aria-label="Previous">‹</button>
+
+            <div class="char-track">
+              <div class="char-slide active" data-uni="ipb">
+                <div class="char-bg" style="background-image: url('ipb.jpg')"></div>
+                <img src="char-ipb.png" alt="IPB look" class="char-img" />
+                <div class="char-info">
+                  <span class="char-badge">IPB</span>
+                  <h3>IPB University</h3>
+                  <p>Computer Science</p>
+                </div>
+              </div>
+              <div class="char-slide" data-uni="unpad">
+                <div class="char-bg" style="background-image: url('unpad.jpg')"></div>
+                <img src="char-unpad.png" alt="UNPAD look" class="char-img" />
+                <div class="char-info">
+                  <span class="char-badge">UNPAD</span>
+                  <h3>Universitas Padjadjaran</h3>
+                  <p>Computer Science (Ilkom)</p>
+                </div>
+              </div>
+              <div class="char-slide" data-uni="unair">
+                <div class="char-bg" style="background-image: url('unair.jpg')"></div>
+                <img src="char-unair.png" alt="UNAIR look" class="char-img" />
+                <div class="char-info">
+                  <span class="char-badge">UNAIR</span>
+                  <h3>Universitas Airlangga</h3>
+                  <p>English Literature</p>
+                </div>
+              </div>
+              <div class="char-slide" data-uni="ugm">
+                <div class="char-bg" style="background-image: url('ugm.jpg')"></div>
+                <img src="char-ugm.png" alt="UGM look" class="char-img" />
+                <div class="char-info">
+                  <span class="char-badge">UGM</span>
+                  <h3>Universitas Gadjah Mada</h3>
+                  <p>Computer Science (Ilkom)</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="char-nav next" type="button" aria-label="Next">›</button>
+          </div>
+
+          <div class="char-dots">
+            <button class="dot active" type="button" data-index="0"></button>
+            <button class="dot" type="button" data-index="1"></button>
+            <button class="dot" type="button" data-index="2"></button>
+            <button class="dot" type="button" data-index="3"></button>
+          </div>
+
+          <div class="looks-deco looks-deco-right"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dreams -->
+    <section id="dreams" class="section dreams">
+      <div class="container">
+        <h2 class="section-title" data-i18n="dreams-title">My Dream Universities</h2>
+        <p class="section-desc" data-i18n="dreams-desc">
+          Places where I hope to grow, learn, and shape my future.
         </p>
 
-        <p>
-          I'm a creative and independent person who loves expressing
-          my thoughts through journaling. I also have a soft spot for
-          cats and music, which often bring comfort and inspiration
-          to my days.
-        </p>
+        <div class="uni-grid">
+          <!-- IPB -->
+          <a href="https://www.ipb.ac.id/" target="_blank" rel="noopener" class="uni-card">
+            <div class="uni-img-wrap">
+              <img src="ipb.jpg" alt="IPB University" class="uni-img" />
+            </div>
+            <div class="uni-body">
+              <div class="uni-logo-text">IPB</div>
+              <h3>IPB University</h3>
+              <p class="major">Computer Science <span>(Ilmu Komputer)</span></p>
+              <p class="degree">S1 · Bachelor</p>
+              <p class="location">Bogor, Indonesia</p>
+            </div>
+          </a>
 
-        <p>
-          I love exploring new places and dreaming about seeing more
-          of the world. I believe there are always new things to learn,
-          new places to discover, and new experiences waiting for me.
-        </p>
+          <!-- UNAIR -->
+          <a href="https://www.unair.ac.id/" target="_blank" rel="noopener" class="uni-card">
+            <div class="uni-img-wrap">
+              <img src="unair.jpg" alt="Universitas Airlangga" class="uni-img" />
+            </div>
+            <div class="uni-body">
+              <div class="uni-logo-text">UNAIR</div>
+              <h3>Universitas Airlangga</h3>
+              <p class="major">English Literature <span>(Sastra Inggris)</span></p>
+              <p class="degree">S1 · Bachelor</p>
+              <p class="location">Surabaya, Indonesia</p>
+            </div>
+          </a>
 
-        <div class="signature">
-          <span>with curiosity,</span>
-          <strong>me ♡</strong>
+          <!-- UNPAD -->
+          <a href="https://www.unpad.ac.id/" target="_blank" rel="noopener" class="uni-card">
+            <div class="uni-img-wrap">
+              <img src="unpad.jpg" alt="Universitas Padjadjaran" class="uni-img" />
+            </div>
+            <div class="uni-body">
+              <div class="uni-logo-text">UNPAD</div>
+              <h3>Universitas Padjadjaran</h3>
+              <p class="major">Computer Science <span>(Ilmu Komputer)</span></p>
+              <p class="degree">S1 · Bachelor</p>
+              <p class="location">Bandung, Indonesia</p>
+            </div>
+          </a>
+
+          <!-- UGM -->
+          <a href="https://www.ugm.ac.id/" target="_blank" rel="noopener" class="uni-card">
+            <div class="uni-img-wrap">
+              <img src="ugm.jpg" alt="Universitas Gadjah Mada" class="uni-img" />
+            </div>
+            <div class="uni-body">
+              <div class="uni-logo-text">UGM</div>
+              <h3>Universitas Gadjah Mada</h3>
+              <p class="major">Computer Science <span>(Ilmu Komputer)</span></p>
+              <p class="degree">S1 · Bachelor</p>
+              <p class="location">Yogyakarta, Indonesia</p>
+            </div>
+          </a>
+
+          <!-- SUSS -->
+          <a href="https://www.suss.edu.sg/" target="_blank" rel="noopener" class="uni-card highlight">
+            <div class="uni-img-wrap">
+              <img src="suss.jpg" alt="Singapore University of Social Sciences" class="uni-img" />
+            </div>
+            <div class="uni-body">
+              <div class="uni-logo-text sg">SUSS</div>
+              <h3>Singapore University of Social Sciences</h3>
+              <p class="major">Digital Marketing</p>
+              <p class="degree">S2 · Master's</p>
+              <p class="location">Singapore</p>
+            </div>
+          </a>
+
+          <!-- NUS -->
+          <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener" class="uni-card highlight">
+            <div class="uni-img-wrap">
+              <img src="nus.jpg" alt="National University of Singapore" class="uni-img" />
+            </div>
+            <div class="uni-body">
+              <div class="uni-logo-text sg">NUS</div>
+              <h3>National University of Singapore</h3>
+              <p class="major">Digital Transformation</p>
+              <p class="degree">S2 · Master's</p>
+              <p class="location">Singapore</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Favorites -->
+    <section id="food" class="section food">
+      <div class="container">
+        <h2 class="section-title" data-i18n="fav-title">౿ my favorite things</h2>
+        <p class="section-desc" data-i18n="fav-desc">Little things that make life feel softer.</p>
+
+        <div class="fav-block">
+          <h3 class="fav-subtitle">🎧 Music</h3>
+          <div class="music-grid">
+            <a class="music-card" href="https://youtu.be/tdzUmuXRivs" target="_blank" rel="noopener">
+              <img src="music-yel.jpg" alt="Yel - About Last Night" class="music-cover" />
+              <p class="music-song">About Last Night..</p>
+              <p class="music-artist">Yel</p>
+            </a>
+            <a class="music-card" href="https://youtu.be/yFTAYXDTjqI" target="_blank" rel="noopener">
+              <img src="music-newjeans.jpg" alt="NewJeans - New Jeans" class="music-cover" />
+              <p class="music-song">New Jeans</p>
+              <p class="music-artist">NewJeans</p>
+            </a>
+            <a class="music-card" href="https://youtu.be/tkNWlBsL318" target="_blank" rel="noopener">
+              <img src="music-emi.jpg" alt="Emi Choi - what if we?" class="music-cover" />
+              <p class="music-song">what if we?</p>
+              <p class="music-artist">Emi Choi</p>
+            </a>
+          </div>
         </div>
 
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- WHY UNIVERSITY -->
-  <section class="section university-intro">
-
-    <div class="section-heading center reveal">
-      <p class="eyebrow">02 · MY JOURNEY</p>
-      <h2>Why I want<br><span>to go to university.</span></h2>
-    </div>
-
-
-    <div class="quote-box reveal">
-
-      <span class="quote-mark">“</span>
-
-      <p>
-        I want to go to university because I want to learn more,
-        discover new things, and grow into a more independent person.
-      </p>
-
-      <span class="quote-mark bottom">”</span>
-
-    </div>
-
-
-    <div class="university-text reveal">
-
-      <p>
-        I want to gain knowledge and experiences that can help me
-        understand what I'm capable of and what I want to achieve
-        in the future.
-      </p>
-
-      <p>
-        University is also a place where I can meet new people,
-        explore my interests, develop my creativity, and experience
-        new things.
-      </p>
-
-      <p>
-        I want to challenge myself, try different opportunities,
-        and step outside my comfort zone.
-      </p>
-
-      <p>
-        Most importantly, I want to build a future where I can keep
-        learning, create something meaningful, and eventually explore
-        the world while doing something I love.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- UNIVERSITY -->
-  <section class="section university" id="university">
-
-    <div class="section-heading reveal">
-      <p class="eyebrow">03 · UNIVERSITY DREAMS</p>
-      <h2>Places I might<br><span>grow into.</span></h2>
-    </div>
-
-
-    <div class="university-grid">
-
-      <article class="uni-card reveal">
-
-        <div class="uni-number">01</div>
-
-        <div class="uni-icon">🌿</div>
-
-        <h3>UGM</h3>
-        <p class="major">Sastra Inggris</p>
-
-        <p>
-          I like this path because I enjoy English, creativity,
-          writing, discovering new ideas, and exploring different
-          perspectives.
-        </p>
-
-        <span class="uni-tag">language · creativity</span>
-
-      </article>
-
-
-      <article class="uni-card reveal">
-
-        <div class="uni-number">02</div>
-
-        <div class="uni-icon">☁️</div>
-
-        <h3>UNAIR</h3>
-        <p class="major">Sastra Inggris</p>
-
-        <p>
-          English can give me opportunities to communicate,
-          create, learn about culture, and connect with people
-          from different backgrounds.
-        </p>
-
-        <span class="uni-tag">english · culture</span>
-
-      </article>
-
-
-      <article class="uni-card reveal">
-
-        <div class="uni-number">03</div>
-
-        <div class="uni-icon">✦</div>
-
-        <h3>IPB University</h3>
-        <p class="major">Ilmu Komunikasi</p>
-
-        <p>
-          Communication connects with my interest in editing,
-          content, creativity, storytelling, and expressing ideas
-          through different media.
-        </p>
-
-        <span class="uni-tag">media · communication</span>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- INTERESTS -->
-  <section class="section interests">
-
-    <div class="section-heading center reveal">
-
-      <p class="eyebrow">04 · THINGS I LOVE</p>
-
-      <h2>
-        Little things<br>
-        that make me <span>me.</span>
-      </h2>
-
-    </div>
-
-
-    <div class="interest-grid">
-
-      <div class="interest-card reveal">
-        <span>📖</span>
-        <h3>Learning</h3>
-        <p>Learning something new always makes life more interesting.</p>
-      </div>
-
-      <div class="interest-card reveal">
-        <span>🎧</span>
-        <h3>Music</h3>
-        <p>Music gives me ideas, emotions, and little moments of inspiration.</p>
-      </div>
-
-      <div class="interest-card reveal">
-        <span>✎</span>
-        <h3>Journaling</h3>
-        <p>I love putting thoughts, ideas, and dreams into my notebook.</p>
-      </div>
-
-      <div class="interest-card reveal">
-        <span>✦</span>
-        <h3>Creating</h3>
-        <p>Editing, designing, writing, and turning ideas into something real.</p>
-      </div>
-
-      <div class="interest-card reveal">
-        <span>🗺</span>
-        <h3>Exploring</h3>
-        <p>I want to discover new places, cultures, and experiences.</p>
-      </div>
-
-      <div class="interest-card reveal">
-        <span>🌱</span>
-        <h3>Growing</h3>
-        <p>Trying, failing, learning, and trying again.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CATS -->
-  <section class="section cats" id="cats">
-
-    <div class="cats-content reveal">
-
-      <p class="eyebrow">05 · A SOFT SPOT</p>
-
-      <h2>
-        And yes...<br>
-        I really love <span>cats.</span> 🐈
-      </h2>
-
-      <p>
-        Cats remind me to enjoy the little things.
-        They're playful, curious, calm, and somehow
-        always manage to make ordinary moments feel special.
-      </p>
-
-      <div class="cat-facts">
-
-        <div>
-          <strong>♡</strong>
-          <span>cute moments</span>
+        <div class="fav-block">
+          <h3 class="fav-subtitle">🎹 Creating music</h3>
+          <p class="fav-note" data-i18n="fav-create-music">I make my own music too — writing, producing, and experimenting with sounds.</p>
         </div>
 
-        <div>
-          <strong>✦</strong>
-          <span>soft energy</span>
+        <div class="fav-block">
+          <h3 class="fav-subtitle">🎬 Creating little projects</h3>
+          <p class="fav-note" data-i18n="fav-create-game">I'm currently trying to make a little game.</p>
+          <div class="tools-row">
+            <div class="tool-item">
+              <img src="tool-godot.png" alt="Godot" class="tool-icon" />
+              <span>Godot</span>
+            </div>
+            <div class="tool-item">
+              <img src="tool-aseprite.png" alt="Aseprite" class="tool-icon" />
+              <span>Aseprite</span>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <strong>☁</strong>
-          <span>little comfort</span>
-        </div>
-
       </div>
+    </section>
 
+
+    <!-- Gallery -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2 class="section-title" data-i18n="gallery-title">📸 lil gallery</h2>
+        <p class="section-desc" data-i18n="gallery-desc">Some moments I like to keep.</p>
+        <div class="gallery-icons">
+          <img src="icon-cat.png" alt="" class="gallery-icon" />
+          <img src="icon-music.png" alt="" class="gallery-icon" />
+          <img src="icon-star.png" alt="" class="gallery-icon" />
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item" data-full="gallery-1.jpg">
+            <img src="gallery-1.jpg" alt="Gallery photo 1" loading="lazy" />
+          </button>
+          <button class="gallery-item" data-full="gallery-2.jpg">
+            <img src="gallery-2.jpg" alt="Gallery photo 2" loading="lazy" />
+          </button>
+          <button class="gallery-item" data-full="gallery-3.jpg">
+            <img src="gallery-3.jpg" alt="Gallery photo 3" loading="lazy" />
+          </button>
+          <button class="gallery-item" data-full="gallery-4.jpg">
+            <img src="gallery-4.jpg" alt="Gallery photo 4" loading="lazy" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <img src="" alt="Full size" id="lightboxImg" />
     </div>
 
-
-    <div class="cat-photo reveal">
-
-      <img
-        src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&q=85"
-        alt="Cute cat">
-
-      <div class="cat-sticker">meow ♡</div>
-
-    </div>
-
-  </section>
-
-
-  <!-- DREAMS -->
-  <section class="section dreams" id="dreams">
-
-    <div class="section-heading center reveal">
-
-      <p class="eyebrow">06 · MY DREAMS</p>
-
-      <h2>
-        Things I want<br>
-        to <span>experience.</span>
-      </h2>
-
-    </div>
-
-
-    <div class="dream-timeline">
-
-      <div class="dream-item reveal">
-
-        <span class="dream-icon">📚</span>
-
-        <div>
-          <small>01</small>
-          <h3>Learn</h3>
-          <p>
-            Keep learning languages, skills, ideas,
-            and things I've never tried before.
+    <!-- Why University -->
+    <section id="why" class="section why">
+      <div class="container">
+        <h2 class="section-title" data-i18n="why-title">Why I Want to Go to University</h2>
+        <div class="why-content">
+          <p data-i18n="why-p1">
+            I want to go to university because I want to learn more, discover new things,
+            and grow into a more independent person. I want to gain knowledge and experiences
+            that can help me understand what I’m capable of and what I want to achieve in the future.
+          </p>
+          <p data-i18n="why-p2">
+            University is also a place where I can meet new people, explore my interests,
+            develop my creativity, and experience new things. I want to challenge myself,
+            try different opportunities, and step outside my comfort zone.
+          </p>
+          <p class="emphasis" data-i18n="why-p3">
+            Most importantly, I want to build a future where I can keep learning,
+            create something meaningful, and eventually explore the world while doing something I love.
           </p>
         </div>
-
       </div>
+    </section>
 
-
-      <div class="dream-item reveal">
-
-        <span class="dream-icon">🎨</span>
-
-        <div>
-          <small>02</small>
-          <h3>Create</h3>
-          <p>
-            Make things that represent my ideas,
-            imagination, and creativity.
-          </p>
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact-title">Let's Connect</h2>
+        <p class="section-desc" data-i18n="contact-desc">Want to chat? Feel free to say hi!</p>
+        <div class="socials">
+          <a href="https://instagram.com/kknjau" class="social-link ig" target="_blank" rel="noopener">
+            Instagram · @kknjau
+          </a>
+          <a href="mailto:kkanjaruless0@gmail.com" class="social-link" target="_blank" rel="noopener">
+            Email · kkanjaruless0@gmail.com
+          </a>
         </div>
-
       </div>
+    </section>
+  </main>
 
-
-      <div class="dream-item reveal">
-
-        <span class="dream-icon">✈</span>
-
-        <div>
-          <small>03</small>
-          <h3>Explore</h3>
-          <p>
-            Visit new places and eventually see more
-            of the world.
-          </p>
-        </div>
-
-      </div>
-
-
-      <div class="dream-item reveal">
-
-        <span class="dream-icon">🌱</span>
-
-        <div>
-          <small>04</small>
-          <h3>Grow</h3>
-          <p>
-            Become someone I'm proud of while enjoying
-            the journey along the way.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FINAL -->
-  <section class="final-section">
-
-    <div class="final-content reveal">
-
-      <span class="final-flower">✿</span>
-
-      <p>
-        There's still so much<br>
-        I want to discover.
-      </p>
-
-      <h2>
-        This is only<br>
-        the beginning.
-      </h2>
-
-      <span class="final-sparkle">✦ ✧ ✦</span>
-
-    </div>
-
-  </section>
-
-
-  <footer>
-
-    <p>
-      made with curiosity & little dreams ♡
-    </p>
-
-    <span>© <span id="year"></span> About Me</span>
-
+  <footer class="footer">
+    <p data-i18n="footer">Made with curiosity · Ready for GitHub Pages</p>
   </footer>
 
+  <script>
+    // Fade-in sections
+    const sections = document.querySelectorAll('.section, .hero');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    sections.forEach(sec => observer.observe(sec));
 
-  <script src="script.js"></script>
+    // Click sound (short soft click)
+    const clickAudio = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdH2Onp2QgH1+goWQmJqVnY+Bf4OJlZmYnJGGg4SMl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJGHhIWNl5mYnJG');
+    // fallback simple click using AudioContext if base64 fails
+    function playClick() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.frequency.value = 800;
+        gain.gain.setValueAtTime(0.08, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.06);
+        osc.start(ctx.currentTime);
+        osc.stop(ctx.currentTime + 0.06);
+      } catch(e) {}
+    }
+
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('a, button, .uni-card, .char-nav, .dot, .social-link, .btn')) {
+        playClick();
+      }
+    });
+
+
+    
+    // ===== Language switcher EN / ID =====
+    const translations = {
+      en: {
+        "nav-about": "About",
+        "nav-looks": "Looks",
+        "nav-dreams": "Dreams",
+        "nav-fav": "Favorites",
+        "nav-why": "Why Uni",
+        "nav-contact": "Contact",
+        "eyebrow": "Hello, I'm",
+        "tagline": "Aspiring student · Dreamer · Explorer",
+        "intro": "Building a future through curiosity, learning, and meaningful experiences.",
+        "btn-more": "Discover more",
+        "about-title": "About Me",
+        "about-p1": "I'm someone who loves learning new things and exploring different paths. Right now, I'm focused on preparing myself for university — a place where I can grow, challenge myself, and discover what I'm truly capable of.",
+        "about-p2": "Whether through language, literature, technology, or simply meeting new people, I want every experience to shape me into a more independent and creative person.",
+        "label-now": "Currently",
+        "val-now": "Preparing for university",
+        "label-interest": "Interests",
+        "val-interest": "Language · Literature · Tech · Exploration",
+        "label-goal": "Goal",
+        "val-goal": "Keep learning & create something meaningful",
+        "looks-title": "Campus Looks",
+        "looks-desc": "Swipe to see the character in each university jacket",
+        "dreams-title": "My Dream Universities",
+        "dreams-desc": "Places where I hope to grow, learn, and shape my future.",
+        "fav-title": "౿ my favorite things",
+        "fav-desc": "Little things that make life feel softer.",
+        "fav-create-music": "I make my own music too — writing, producing, and experimenting with sounds.",
+        "fav-create-game": "I'm currently trying to make a little game.",
+        "gallery-title": "📸 lil gallery",
+        "gallery-desc": "Some moments I like to keep.",
+        "nav-gallery": "Gallery",
+        "fav-sweet": "Sweet",
+        "fav-drink": "Drink",
+        "fav-savory": "Savory",
+        "fav-choco-desc": "Classic creamy chocolate that never fails.",
+        "fav-tian-desc": "Refreshing and perfect for any mood.",
+        "fav-udon-desc": "Warm, comforting, and always satisfying.",
+        "why-title": "Why I Want to Go to University",
+        "why-p1": "I want to go to university because I want to learn more, discover new things, and grow into a more independent person. I want to gain knowledge and experiences that can help me understand what I'm capable of and what I want to achieve in the future.",
+        "why-p2": "University is also a place where I can meet new people, explore my interests, develop my creativity, and experience new things. I want to challenge myself, try different opportunities, and step outside my comfort zone.",
+        "why-p3": "Most importantly, I want to build a future where I can keep learning, create something meaningful, and eventually explore the world while doing something I love.",
+        "contact-title": "Let's Connect",
+        "contact-desc": "Want to chat? Feel free to say hi!",
+        "footer": "Made with curiosity · Ready for GitHub Pages"
+      },
+      id: {
+        "nav-about": "Tentang",
+        "nav-looks": "Gaya",
+        "nav-dreams": "Impian",
+        "nav-fav": "Favorit",
+        "nav-why": "Kenapa Kuliah",
+        "nav-contact": "Kontak",
+        "eyebrow": "Halo, aku",
+        "tagline": "Calon mahasiswa · Pemimpi · Penjelajah",
+        "intro": "Membangun masa depan lewat rasa ingin tahu, belajar, dan pengalaman yang berarti.",
+        "btn-more": "Jelajahi lebih lanjut",
+        "about-title": "Tentang Aku",
+        "about-p1": "Aku orang yang suka belajar hal baru dan mencoba berbagai jalur. Sekarang aku fokus mempersiapkan diri untuk kuliah — tempat di mana aku bisa tumbuh, menantang diri, dan menemukan apa yang benar-benar mampu kulakukan.",
+        "about-p2": "Baik lewat bahasa, sastra, teknologi, atau sekadar bertemu orang baru, aku ingin setiap pengalaman membentukku menjadi pribadi yang lebih mandiri dan kreatif.",
+        "label-now": "Saat ini",
+        "val-now": "Mempersiapkan diri ke universitas",
+        "label-interest": "Minat",
+        "val-interest": "Bahasa · Sastra · Teknologi · Eksplorasi",
+        "label-goal": "Tujuan",
+        "val-goal": "Terus belajar & menciptakan sesuatu yang bermakna",
+        "looks-title": "Gaya Kampus",
+        "looks-desc": "Geser untuk melihat karakter dengan almet tiap universitas",
+        "dreams-title": "Universitas Impianku",
+        "dreams-desc": "Tempat di mana aku berharap bisa tumbuh, belajar, dan membentuk masa depanku.",
+        "fav-title": "౿ my favorite things",
+        "fav-desc": "Hal-hal kecil yang membuat hidup terasa lebih lembut.",
+        "fav-create-music": "Aku juga membuat musik sendiri — menulis, produksi, dan bereksperimen dengan suara.",
+        "fav-create-game": "Sekarang aku sedang mencoba membuat game kecil.",
+        "gallery-title": "📸 lil gallery",
+        "gallery-desc": "Beberapa momen yang ingin kusimpan.",
+        "nav-gallery": "Galeri",
+        "fav-sweet": "Manis",
+        "fav-drink": "Minuman",
+        "fav-savory": "Asin",
+        "fav-choco-desc": "Cokelat creamy klasik yang selalu pas.",
+        "fav-tian-desc": "Segar dan cocok untuk segala suasana.",
+        "fav-udon-desc": "Hangat, nyaman, dan selalu memuaskan.",
+        "why-title": "Kenapa Aku Ingin Kuliah",
+        "why-p1": "Aku ingin kuliah karena ingin belajar lebih banyak, menemukan hal-hal baru, dan tumbuh menjadi pribadi yang lebih mandiri. Aku ingin mendapatkan ilmu dan pengalaman yang membantuku memahami apa yang mampu kulakukan dan apa yang ingin kucapai di masa depan.",
+        "why-p2": "Universitas juga tempat di mana aku bisa bertemu orang baru, mengeksplorasi minat, mengembangkan kreativitas, dan mencoba pengalaman baru. Aku ingin menantang diri, mencoba kesempatan berbeda, dan keluar dari zona nyaman.",
+        "why-p3": "Yang paling penting, aku ingin membangun masa depan di mana aku bisa terus belajar, menciptakan sesuatu yang bermakna, dan suatu hari menjelajahi dunia sambil melakukan apa yang aku cintai.",
+        "contact-title": "Yuk Terhubung",
+        "contact-desc": "Mau ngobrol? Silakan sapa saja!",
+        "footer": "Dibuat dengan rasa ingin tahu · Siap untuk GitHub Pages"
+      }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'en';
+
+    function applyLang(lang) {
+      currentLang = lang;
+      localStorage.setItem('lang', lang);
+      const dict = translations[lang] || translations.en;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      const label = document.getElementById('langLabel');
+      if (label) label.textContent = lang.toUpperCase();
+      document.documentElement.lang = lang === 'id' ? 'id' : 'en';
+    }
+
+    document.getElementById('langToggle')?.addEventListener('click', () => {
+      applyLang(currentLang === 'en' ? 'id' : 'en');
+    });
+
+    applyLang(currentLang);
+
+
+    // Music player volume
+    const audio = document.getElementById('bgMusic');
+    if (audio) {
+      audio.volume = 0.85;
+    }
+
+    
+    // Lightbox for gallery
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+    document.querySelectorAll('.gallery-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const src = btn.getAttribute('data-full');
+        if (lightboxImg && lightbox) {
+          lightboxImg.src = src;
+          lightbox.hidden = false;
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+    function closeLightbox() {
+      if (lightbox) {
+        lightbox.hidden = true;
+        document.body.style.overflow = '';
+      }
+    }
+    lightboxClose?.addEventListener('click', closeLightbox);
+    lightbox?.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    // Character slider
+    const slides = document.querySelectorAll('.char-slide');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((s, i) => s.classList.toggle('active', i === index));
+      dots.forEach((d, i) => d.classList.toggle('active', i === index));
+      current = index;
+    }
+
+    document.querySelector('.char-nav.next')?.addEventListener('click', () => {
+      showSlide((current + 1) % slides.length);
+    });
+    document.querySelector('.char-nav.prev')?.addEventListener('click', () => {
+      showSlide((current - 1 + slides.length) % slides.length);
+    });
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => showSlide(+dot.dataset.index));
+    });
+  </script>
+
+  <!-- Music Player (side) -->
+  <div class="music-player" id="musicPlayer">
+    <div class="music-info">
+      <span class="music-title">♪ Just A Dream</span>
+    </div>
+    <audio id="bgMusic" controls loop preload="auto" playsinline controlslist="nodownload">
+      <source src="just-a-dream.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 
 </body>
 </html>
