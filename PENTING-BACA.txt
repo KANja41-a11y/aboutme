@@ -1,0 +1,30 @@
+============================================
+CARA PASANG OG IMAGE (WAJIB BACA)
+============================================
+
+Masalah sebelumnya:
+- File og-image.png sudah di-upload
+- Tapi index.html BELUM punya meta og:image
+- Jadi Facebook/WA pakai foto profil (profile.jpg)
+
+Yang harus di-upload KE ROOT REPO (sejajar index.html):
+
+1) index.html   ← REPLACE file lama (ini yang penting!)
+2) og-image.png ← REPLACE / upload baru
+
+Langkah di GitHub:
+1. Buka https://github.com/KANja41-a11y/aboutme
+2. Klik index.html → pensil (Edit) → hapus semua → paste isi index.html dari ZIP
+   ATAU upload file (Add file → Upload files) lalu centang "commit directly"
+3. Upload og-image.png (Add file → Upload files)
+4. Commit changes
+5. Tunggu 1-2 menit
+6. Buka Facebook Debugger:
+   https://developers.facebook.com/tools/debug/
+   Tempel: https://kanja41-a11y.github.io/aboutme/
+   Klik Debug → lalu SCRAPE AGAIN (penting!)
+
+Cek berhasil:
+- https://kanja41-a11y.github.io/aboutme/og-image.png  (harus gambar kartu Khanza + foto)
+- Di debugger, Link Preview harus pakai gambar og-image.png, BUKAN foto bookstore saja
+
