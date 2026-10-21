@@ -1,0 +1,28 @@
+========================================
+OG IMAGE untuk https://kanja41-a11y.github.io/aboutme/
+========================================
+
+Isi ZIP ini:
+1. index.html     → sudah ditambah meta og:image (ganti file lama)
+2. og-image.png   → gambar thumbnail 1200x630
+3. CARA-PASANG.txt (file ini)
+
+LANGKAH:
+1. Download & extract ZIP ini.
+2. Di repo GitHub: KANja41-a11y/aboutme
+   - Upload / replace file: index.html
+   - Upload file baru: og-image.png (di root repo, sejajar index.html)
+3. Commit & push ke branch main.
+4. Tunggu 1–2 menit sampai GitHub Pages update.
+5. Cek gambar bisa dibuka:
+   https://kanja41-a11y.github.io/aboutme/og-image.png
+6. Paksa update cache (opsional, butuh login FB):
+   https://developers.facebook.com/tools/debug/
+   Tempel: https://kanja41-a11y.github.io/aboutme/
+   → Debug → Scrape Again
+
+Tanpa login Facebook:
+- Bagikan link ke WhatsApp / chat sendiri — preview biasanya muncul.
+- Atau cek di: https://www.opengraph.xyz/  (paste URL aboutme)
+
+Selesai. Thumbnail akan muncul saat share ke WA, Facebook, Instagram, LinkedIn, dll.
